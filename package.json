@@ -1,5 +1,5 @@
 {
-  "name": "auto_test",
+  "name": "auto-generate-test",
   "version": "1.0.0",
   "description": "",
   "main": "./lib/start.js",
