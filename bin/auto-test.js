@@ -1,20 +1,2 @@
 #!/usr/bin/env node
-
-const path = require("path");
-const minimist = require("minimist");
-const start = require("../lib/start");
-
-const params = minimist(process.argv.slice(2));
-const ignore = params.i;
-const isNeedTest = ignore !== "test";
-const isNeedGenerate = ignore !== "gen" && params.s && params.o;
-
-let sourceDirPath = "",
-  targetDirPath = "";
-
-if (isNeedGenerate) {
-  sourceDirPath = path.resolve(params.s);
-  targetDirPath = path.resolve(params.o);
-}
-
-start({ sourceDirPath, targetDirPath, isNeedTest, isNeedGenerate });
+const path=require("path"),minimist=require("minimist"),start=require("../lib/start"),params=minimist(process.argv.slice(2)),ignore=params.i,isNeedTest="test"!==ignore,isNeedGenerate="gen"!==ignore&&params.s&&params.o;let sourceDirPath="",targetDirPath="";console.log("demo"),isNeedGenerate&&(sourceDirPath=path.resolve(params.s),targetDirPath=path.resolve(params.o)),start({sourceDirPath:sourceDirPath,targetDirPath:targetDirPath,isNeedTest:isNeedTest,isNeedGenerate:isNeedGenerate});
