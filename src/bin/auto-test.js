@@ -11,7 +11,6 @@ const isNeedGenerate = ignore !== "gen" && params.s && params.o;
 
 let sourceDirPath = "",
   targetDirPath = "";
-console.log("demo");
 if (isNeedGenerate) {
   sourceDirPath = path.resolve(params.s);
   targetDirPath = path.resolve(params.o);

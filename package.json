@@ -1,13 +1,17 @@
 {
   "name": "auto-generate-test",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "lib/start.js",
   "bin": {
     "auto-test": "bin/auto-test.js"
   },
+  "files": [
+    "bin",
+    "lib"
+  ],
   "scripts": {},
-  "author": "",
+  "author": "lee",
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.15.8",
