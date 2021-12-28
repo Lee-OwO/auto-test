@@ -16,14 +16,15 @@ module.exports = function ({ sourcePath, targetPath }) {
       [
         autoImportPlugin,
         {
-          fileInfo,
+          fileInfo: fileInfo.info,
+          type: fileInfo.type,
           path: path.relative(path.resolve(targetPath, "../"), sourcePath),
         },
       ],
       [
         generatePlugin,
         {
-          fileInfo,
+          fileInfo: fileInfo.info,
         },
       ],
     ],

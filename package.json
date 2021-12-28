@@ -1,10 +1,11 @@
 {
   "name": "auto-generate-test",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "lib/start.js",
   "bin": {
-    "auto-test": "bin/auto-test.js"
+    "auto-test": "src/bin/auto-test.js",
+    "doc": "src/bin/doc.js"
   },
   "files": [
     "bin",
